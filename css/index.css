@@ -1,0 +1,198 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fee2f8;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+}
+.header .logo {
+  display: block;
+  width: 100px;
+}
+.header .nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  gap: 30px;
+  padding: 10px;
+}
+.header .nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: deeppink;
+}
+.header .nav a:hover {
+  color: darkgreen;
+}
+
+.welcome {
+  background-color: #c177b2;
+  background-image: linear-gradient(-80deg, #c177b2 0%, #e2e1e1 74%);
+  height: 70vh;
+  text-align: center;
+  padding: 15%;
+}
+.welcome h1 {
+  text-transform: uppercase;
+  color: darkgreen;
+  font-size: 1.9rem;
+}
+.welcome h1:hover {
+  color: deeppink;
+}
+.welcome p {
+  color: darkgreen;
+  font-size: 1.9rem;
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.welcome .button {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 2px solid darkgreen;
+  text-decoration: none;
+  background-color: #fee2f8;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+  color: darkgreen;
+}
+.welcome .button:hover {
+  color: deeppink;
+}
+
+.about {
+  background-color: #fee2f8;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+  padding: 30px;
+}
+.about h2 {
+  color: darkgreen;
+  padding: 30px;
+}
+.about p {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.projects-section {
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #c177b2;
+  background-image: linear-gradient(80deg, #c177b2 0%, #e2e1e1 74%);
+}
+.projects-section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: darkgreen;
+}
+.projects-section .projects-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects-section .projects-grid a {
+  text-decoration: none;
+  color: darkgreen;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0% 40% 74% 34%/41% 33% 0% 36%;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+.projects-section .projects-grid a .project-image {
+  width: 100%;
+}
+.projects-section .btn-show-all {
+  align-items: center;
+  justify-content: center;
+}
