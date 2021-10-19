@@ -1,5 +1,7 @@
 .header {
-	// position: fixed;
+	position: fixed;
+	top: 0;
+	left: 0;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -10,9 +12,9 @@
 	background-color: #fee2f8;
 	background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
 
-	.logo {
-		display: block;
+	.header-img {
 		width: 100px;
+		display: block;
 	}
 
 	.nav ul {
@@ -23,13 +25,22 @@
 		gap: 30px;
 		padding: 10px;
 	}
+
 	.nav a {
 		text-decoration: none;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		color: deeppink;
+
 		&:hover {
 			color: darkgreen;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.nav {
+			display: flex;
+			flex-wrap: wrap;
 		}
 	}
 }
